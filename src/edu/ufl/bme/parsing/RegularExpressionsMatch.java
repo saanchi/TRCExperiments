@@ -12,19 +12,18 @@ public class RegularExpressionsMatch {
 		Pattern patern = Pattern.compile(regex);
 		String sentence = "ABC for a abc it is an mno for all that i know";
 		System.out.println( patern.matcher(sentence).matches());
-		HashMap<String, ArrayList<String>> map = new HashMap<String, ArrayList<String>>();
-		ArrayList<String> faltoo = new ArrayList<String>();
-		faltoo.add("farzi");
-		map.put("bekaar", faltoo);
-		ArrayList<String> temp =  new ArrayList<String>();
-		temp = map.get("bekaar");
-		temp.add("bakwas");
-		ArrayList<String> test = new ArrayList<String>();
-		test = map.get("bekaar");
-		Iterator<String> itr = test.iterator();
-		while(itr.hasNext()){
-			System.out.println(itr.next());
+		
+		HashMap<String,Integer> map = new HashMap<String, Integer>();
+		map.put("faltoo", 1);
+		Iterator<String> itr  = map.keySet().iterator();
+		while( itr.hasNext()){
+			if(itr.next().equalsIgnoreCase("faltoo")){
+				Integer count = map.get("faltoo");
+				count++;
+				map.put("faltoo", count);
+			}
 		}
+		System.out.println(map.get("faltoo"));
 	}
 	
 }

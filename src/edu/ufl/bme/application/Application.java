@@ -4,7 +4,6 @@ package edu.ufl.bme.application;
 import java.io.*;
 import java.awt.*;
 import java.awt.event.*;
-
 import javax.swing.*;
 
 public class Application extends JPanel
@@ -24,7 +23,9 @@ public class Application extends JPanel
 
         sentenceArea = new JTextArea(15,20 );
         sentenceArea.setEditable(true);
-        sentenceArea.setText("I think you ought to know I'm feeling very depressed.");
+        sentenceArea.setText("Marvin : I think you ought to know I'm feeling very depressed.");
+        sentenceArea.setText("Marvin: Life, loathe it or ignore it, you can't like it.");
+        sentenceArea.setLineWrap(true);
         JScrollPane sentenceAreaScrollPane = new JScrollPane(sentenceArea);
         JPanel textAreaPanel = new JPanel();
         textAreaPanel.add(sentenceAreaScrollPane);
@@ -91,9 +92,6 @@ public class Application extends JPanel
         	if (fileButton.isSelected()) {// if in file mode
         		if( file != null ){
         			try {
-						System.out.println( "File mode is active " + file.getName() + " " 
-											+ file.getAbsolutePath() + " " + file.getCanonicalPath()
-											+ " " + file.getPath() + " " );
 						process.runFileMode(file.getAbsolutePath(), file.getName());
         			} catch (Exception e1) {
 						e1.printStackTrace();

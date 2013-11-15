@@ -52,8 +52,8 @@ public class RegexEngine {
 				// Line contains two values
 				// First is the sub-label and the its corresponding label
 				String arr[]    = line.split( Constants.FIELD_DELIM );
-				String label    = arr.length > 0 ? arr[0] : null;
-				String sublabel = arr.length > 1 ? arr[1] : null;
+				String sublabel    = arr.length > 0 ? arr[0] : null;
+				String label = arr.length > 1 ? arr[1] : null;
 				if( label == null || sublabel == null ) continue;
 				subLabelLabelMap.put( sublabel, label);
 			}
@@ -154,28 +154,29 @@ public class RegexEngine {
 	    	bw = new BufferedWriter( new FileWriter( new File( taggedFile )));
 	    	while(( line = br.readLine()) != null ){
 				String arr[] 		 = line.split( Constants.FIELD_DELIM );
-				String sentence 	 = arr.length > 0 ? arr[0] : "";
+				String sentence 	 = arr.length > 0 ? arr[0] : null;
+				if( sentence == null ) continue;
 				subLabels            = runRegex(arr[0]);
-				String isDistortion = "Y" ;
-				// if sublabels is empty it means regex engine did not detected any distortion
+				String isDistortion  = "Y" ;
+				// if sub-labels is empty it means regex engine did not detected any distortion
 				if( subLabels.isEmpty()){
 					isDistortion = "Emotion";
 				}
-				StringBuilder sublabels = new StringBuilder(); // Now create a string for labels and sublabels
+				StringBuilder sublabels = new StringBuilder(); // Now create a string for labels and sub-labels
 				StringBuilder labels    = new StringBuilder();
 				Iterator<String> itr = subLabels.iterator();
 				while(itr.hasNext()){
 					String sublabel = itr.next();
 					String label    = subLabelLabelMap.get( sublabel );
-					sublabels.append( sublabel +  Constants.LABEL_DELIM);
+					sublabels.append( sublabel +  Constants.LABEL_DELIM );
 					labels.append(label + Constants.LABEL_DELIM);
 					sublabel = null; label = null;
 				}
 				// Write to file
 				bw.write( sentence + Constants.FIELD_DELIM + isDistortion 
 						           + Constants.FIELD_DELIM + labels.toString() 
-						           + Constants.FIELD_DELIM + subLabels.toString() + "\n" );
-				// Explicitly setting variables to null. Trying to reduce dependency on GC
+						           + Constants.FIELD_DELIM + sublabels.toString() + "\n" );
+				// Explicitly setting variables to null. Trying to reduce GC 's work
 				subLabels = null; labels = null; sentence = null; isDistortion = null; arr = null;
 			}
 	    }catch( Exception e){
@@ -194,7 +195,7 @@ public class RegexEngine {
 	
 	public static void main(String args[]) throws IOException{
 		RegexEngine regengine = new RegexEngine();
-		String sentence = "I think you ought to know I'm feeling very depressed.";
+		String sentence = "Life, loathe it or ignore it, you can't like it.";
 		ArrayList<String> labelled = regengine.runRegex(sentence);
 		Iterator itr = labelled.iterator();
 		while( itr.hasNext()){

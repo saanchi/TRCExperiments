@@ -9,6 +9,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.concurrent.atomic.AtomicInteger;
 
 import edu.ufl.bme.parsing.TRParse;
 import edu.ufl.bme.regexmatch.RegexEngine;
@@ -18,6 +19,7 @@ public class Process  {
 
 	public TRParse tParse;
 	public RegexEngine regex;
+	
 	
 	public Process(){
 		tParse = new TRParse();
@@ -50,12 +52,16 @@ public class Process  {
 		// Create a tagged file 
 		// Get file path 
 		String arr[]  = inputFilePath.split(fileName); // Only for linux now. No windows
-		String taggedFileName = arr[0] + "/"  + "tagged.txt";
-		String outputFileName = arr[0] + "/"  + "result.txt";
 		String inputFileName  = arr[0] + "/"  + fileName;
+		String taggedFileName = arr[0] + "/"  + "tagged.txt";
+		String outputFileName = arr[0] + "/"  + "regex_output.txt";
+		String resultFileName  = arr[0] + "/"  + "result.txt";
+		// Run parser and tagger on input file
 		tParse.tagFile(inputFileName, taggedFileName );
+		// Run regex engine on tagged file
 		regex.runRegexFile( taggedFileName, outputFileName );
-		compareResults( inputFileName, outputFileName );
+		// Compare input sentences with the output of regex
+		compareResults( inputFileName, outputFileName, resultFileName );
 	}
 	
 	/**
@@ -68,8 +74,7 @@ public class Process  {
 	 */
 	
 	// ToDo : One MARATHON function. Need to chop it down. Cut! cut! cut!
-	public void compareResults( String inputFile, String resultFile ){
-		String outputFileName = "results.txt";
+	public void compareResults( String inputFile, String regexOutputFile, String resultFile ){
 		
 		// Needed for the calculation of overall precision and recall
 		double totSubLabels, precisionSubLabels, recallSubLabels;
@@ -78,22 +83,24 @@ public class Process  {
 		correctDetected = totDetected =0;
 		
 		// For calculation of precision and recall according to sub-label
-		HashMap<String, Integer> countInputSublabel   = new HashMap<String,Integer>();
-		HashMap<String, Integer> countRegexSublabel   = new HashMap<String, Integer>();
-		HashMap<String, Integer> countCorrectSublabel = new HashMap<String, Integer>();
+		HashMap<String, AtomicInteger> countInputSublabel   = new HashMap<String,AtomicInteger>();
+		HashMap<String, AtomicInteger> countRegexSublabel   = new HashMap<String, AtomicInteger>();
+		HashMap<String, AtomicInteger> countCorrectSublabel = new HashMap<String, AtomicInteger>();
 		
 		BufferedReader br1, br2; br1 = br2 = null;
 		BufferedWriter bw =  null;
 	    String line1, line2; line1 = line2 = "";
-	    HashMap<String,Boolean> inputSubLabelMap = new HashMap<String,Boolean>();
 	    try{
 		    br1 = new BufferedReader(new FileReader(new File(inputFile)));
-		    br2 = new BufferedReader(new FileReader(new File(resultFile)));
-		    bw =  new BufferedWriter(new FileWriter(new File(outputFileName)));
+		    br2 = new BufferedReader(new FileReader(new File(regexOutputFile)));
+		    bw =  new BufferedWriter(new FileWriter(new File(resultFile)));
 		    while(( line1 = br1.readLine()) != null ){
+		    	line2 = br2.readLine() != null ? br2.readLine() : "";
+			    HashMap<String,Boolean> inputSubLabelMap = new HashMap<String,Boolean>();
+
 				// Split the line. And extract corresponding parts 
-		    	String arr1[] = line1.split(";");
-				String arr2[] = line2.split(";");
+		    	String arr1[] = line1.split( Constants.FIELD_DELIM );
+				String arr2[] = line2.split( Constants.FIELD_DELIM );
 				String sentence1     = arr1.length > 0 ? arr1[0] : "";
 				String sentence2     = arr2.length > 0 ? arr2[0] : "";
 				String isDistortion1 = arr1.length > 1 ? arr1[1] : "";
@@ -102,104 +109,105 @@ public class Process  {
 				String label2        = arr2.length > 2 ? arr2[2] : "";
 				String subCategory1  = arr1.length > 3 ? arr1[3] : "";
 				String subCategory2  = arr2.length > 3 ? arr2[3] : "";
-				// sub-Labels are separated by ','
-				// For each sub-label present put an entry in List. Increase the count for precision/recall calculation
-				String sublabel11[]     = subCategory1.split(",");
-				if( sublabel11.length > 1){
+				
+				// For each sub-label present put an entry in List.
+				//Increase the count for precision/recall calculation
+				String sublabel11[]     = subCategory1.split( Constants.LABEL_DELIM );
+				if( sublabel11.length >= 1){
 					for( int i=0; i<sublabel11.length; i++ ){
-						totSubLabels++; // for overall recall calculation
-						inputSubLabelMap.put(sublabel11[i], true);
+						String sublabel = sublabel11[i].trim();
+						if( sublabel.isEmpty() || sublabel.equals("-")) continue;
+						
+						totSubLabels++; 						// for overall recall calculation
+						inputSubLabelMap.put(sublabel, true);
 						// update the count of the sub-label in the map
-						if( countInputSublabel.containsKey(sublabel11[i])){
-							Integer count = countInputSublabel.get(sublabel11[i]);
-							countInputSublabel.put(sublabel11[i], count++);
+						if( countInputSublabel.containsKey(sublabel)){
+							countInputSublabel.get(sublabel).incrementAndGet();
 						}
-						else countInputSublabel.put(sublabel11[i], 1);
+						else{ 
+							countInputSublabel.put(sublabel, new AtomicInteger(1));
+						}
 					}
 				}
-				// Check 1: if the regexEngine correctly categorize the sentence to be distortion. If there is a discrepancy
-				// here don't even move ahead to check labels etc.
-				if( !isDistortion1.equalsIgnoreCase(isDistortion2)){
-					// Print the sentence into file
-					bw.write( sentence1 + Constants.OUTPUT_FIELD_DELIM + isDistortion1 + Constants.OUTPUT_FIELD_DELIM + isDistortion2
-							+  label1 + Constants.OUTPUT_FIELD_DELIM + label2 + Constants.OUTPUT_FIELD_DELIM 
-							+  subCategory1 + Constants.OUTPUT_FIELD_DELIM + subCategory2 + "\n" );
-				}
-				else{ // Parse the labels and sub-labels from the regex file and  input file
-					String sublabel21[]  = subCategory2.split(",");
-					StringBuilder subLabelRegexString = new StringBuilder();
-					StringBuilder subLabelInputString = new StringBuilder();
-					// Check if sublabel from regex file is same as input or not.
-					if( sublabel21.length > 1){
-						for( int i=0; i<sublabel21.length; i++ ){
-							totDetected++;  // total sublabels detected by regex for overall precision calculation
-							// Now update count of individual sub labels
-							if( countRegexSublabel.containsKey(sublabel21[i])){
-								Integer count = countRegexSublabel.get(sublabel21[i]);
-								countRegexSublabel.put(sublabel21[i], count++);
-							}
-							else{
-								countRegexSublabel.put(sublabel21[i], 1);
-							}
-							// Now check if the sub-labels are correctly tagged
-							if( inputSubLabelMap != null && inputSubLabelMap.containsKey(sublabel21[i])){
-								correctDetected++;  					// Increase the correct count.
-								inputSubLabelMap.remove(sublabel21[i]);	//Remove the sublabel from input map
-								// increase the count of sublabel's correct detected for individual label's precision/recall calculation
-								if( countCorrectSublabel != null && countCorrectSublabel.containsKey(sublabel21[i])){
-									Integer count = countCorrectSublabel.get(sublabel21[i]);
-									countCorrectSublabel.put(sublabel21[i], count++);
+				
+				// Parse the labels and sub-labels from the regex file and  input file
+						String sublabel21[]  = subCategory2.split( Constants.LABEL_DELIM );
+						StringBuilder subLabelRegexString = new StringBuilder();
+						StringBuilder subLabelInputString = new StringBuilder();
+						// Check if sublabel from regex file is same as input or not.
+						if( sublabel21.length >= 1){
+							for( int i=0; i<sublabel21.length; i++ ){
+								String sublabel = sublabel21[i].trim();
+								if( sublabel.isEmpty() || sublabel.equals("-")) continue;
+								totDetected++;  // total sublabels detected by regex for overall precision calculation
+								// Now update count of individual sub labels
+								if( countRegexSublabel.containsKey(sublabel)){
+									countRegexSublabel.get(sublabel).incrementAndGet();
 								}
 								else{
-									countCorrectSublabel.put( sublabel21[i], 1);
+									countRegexSublabel.put(sublabel, new AtomicInteger(1));
+								}
+								
+								// Now check if the sub-labels are correctly tagged i.e match with input labels
+								if( inputSubLabelMap != null && inputSubLabelMap.containsKey(sublabel)){
+									correctDetected++;  					// Increase the correct count.
+									inputSubLabelMap.remove(sublabel);	//Remove the sublabel from input map
+									
+									// increase the count of sublabel's correct detected for individual label's precision/recall calculation
+									if( countCorrectSublabel != null && countCorrectSublabel.containsKey(sublabel)){
+										countCorrectSublabel.get(sublabel).incrementAndGet();
+									}
+									else{
+										countCorrectSublabel.put( sublabel, new AtomicInteger(1));
+									}
+								}
+								else { // Unmatched sub labels are supposed to be printed to file.To keep track of incorrect entries
+									subLabelRegexString.append(sublabel); 
 								}
 							}
-							else {
-								subLabelRegexString.append(sublabel21[i]); // Unmatched sub labels are supposed to be printed to file
-							}
 						}
+						// Iterate over the unmatched sublabels of input string to create string
+						Iterator<String> itr = inputSubLabelMap.keySet().iterator();
+						while( itr.hasNext()){
+							subLabelInputString.append(inputSubLabelMap.get(itr.next()));
+						}
+						// Finally Print the unmatched parts of sentence into file
+						bw.write( sentence1 + Constants.OUTPUT_FIELD_DELIM + isDistortion1 + Constants.OUTPUT_FIELD_DELIM + isDistortion2
+								+  label1 + Constants.OUTPUT_FIELD_DELIM + label2 + Constants.OUTPUT_FIELD_DELIM 
+								+  subLabelInputString.toString() + Constants.OUTPUT_FIELD_DELIM +  subLabelRegexString  + "\n" );
+						// Make GC's life easier. set everything null
+						arr1   = null; arr2   = null; sentence1 = null; sentence2 = null; isDistortion1 = null; isDistortion2 = null;
+						label1 = null; label2 = null; subCategory1 = null; subCategory2 = null;				
 					}
-					// Iterate over the unmatched sublabels of input string
-					Iterator<String> itr = inputSubLabelMap.keySet().iterator();
-					while( itr.hasNext()){
-						subLabelInputString.append(inputSubLabelMap.get(itr.next()));
-					}
-					// Finally Print the unmatched parts of sentence into file
-					bw.write( sentence1 + Constants.OUTPUT_FIELD_DELIM + isDistortion1 + Constants.OUTPUT_FIELD_DELIM + isDistortion2
-							+  label1 + Constants.OUTPUT_FIELD_DELIM + label2 + Constants.OUTPUT_FIELD_DELIM 
-							+  subLabelInputString.toString() + Constants.OUTPUT_FIELD_DELIM +  subLabelRegexString  + "\n" );
-				}
-				// Make GC's life easier. set everything null
-				arr1   = null; arr2   = null; sentence1 = null; sentence2 = null; isDistortion1 = null; isDistortion2 = null;
-				label1 = null; label2 = null; subCategory1 = null; subCategory2 = null;				
-		    }
-		 // Ahh! Finally the time to calculate Precision/ Recall
-		    // Overall precision
-		    if( totDetected != 0 && totSubLabels != 0) {
-		    	precisionSubLabels = correctDetected/totDetected;
-		    	recallSubLabels    = correctDetected/totSubLabels;
-		    }
-	    	bw.write(  "Overall" + Constants.FIELD_DELIM + precisionSubLabels + Constants.FIELD_DELIM + recallSubLabels + "\n" );
-	    	System.out.println("Overall" + Constants.FIELD_DELIM + precisionSubLabels + Constants.FIELD_DELIM + recallSubLabels + "\n" );
-		    // Calculate for every sub label
-		    Iterator<String> itr = countInputSublabel.keySet().iterator();
-		    while( itr.hasNext()){
-		    	double precision = 0.0;
-		    	double recall    = 0.0;
-		    	String sublabel = itr.next();
-		    	int countTotal, countDetected, countCorrect;
-		    	countTotal    = countInputSublabel.get(sublabel);
-		    	countDetected = countRegexSublabel.containsKey(sublabel)   ? countRegexSublabel.get(sublabel)   : 0;
-		    	countCorrect  = countCorrectSublabel.containsKey(sublabel) ? countCorrectSublabel.get(sublabel) : 0;
-		    	if( countDetected != 0 && countTotal != 0 ){
-		    		precision  = countCorrect/countDetected;
-		    		recall     = countCorrect/countTotal;
-		    	}
-		    	// Okay now write this also to file
-		    	bw.write(  sublabel + Constants.FIELD_DELIM + precision + Constants.FIELD_DELIM + recall + "\n" );
-		    	System.out.println(sublabel + Constants.FIELD_DELIM + precision + Constants.FIELD_DELIM + recall + "\n");
-		    }
-		}
+				 // Ahh! Finally the time to calculate Precision/ Recall
+				    // Overall precision
+				    if( totDetected != 0 && totSubLabels != 0) {
+				    	precisionSubLabels = correctDetected/totDetected;
+				    	recallSubLabels    = correctDetected/totSubLabels;
+				    }
+			    	bw.write(  "Overall" + Constants.FIELD_DELIM + precisionSubLabels + Constants.FIELD_DELIM + recallSubLabels + "\n" );
+			    	System.out.println("Overall" + Constants.FIELD_DELIM + precisionSubLabels + Constants.FIELD_DELIM + recallSubLabels + "\n" );
+				    // Calculate for every sub label
+				    Iterator<String> itr = countInputSublabel.keySet().iterator();
+				    double recall    = 0.0;
+				    double precision = 0.0;
+				    while( itr.hasNext()){
+				    	String sublabel = itr.next();
+				    	double countTotal, countDetected, countCorrect;
+				    	countTotal = 0;
+				    	countTotal    = countInputSublabel.get(sublabel).get();
+				    	countDetected = countRegexSublabel.containsKey(sublabel)   ? countRegexSublabel.get(sublabel).get()   : 0.0;
+				    	countCorrect  = countCorrectSublabel.containsKey(sublabel) ? countCorrectSublabel.get(sublabel).get() : 0.0;
+				    	if( countDetected != 0 && countTotal != 0 ){
+				    		precision  = countCorrect/countDetected;
+				    		recall     = countCorrect/countTotal;
+				    	}
+				    	// Okay now write this also to file
+				    	bw.write(  sublabel + Constants.FIELD_DELIM + precision + Constants.FIELD_DELIM + recall + "\n" );
+				    	System.out.println(sublabel + Constants.FIELD_DELIM + precision + Constants.FIELD_DELIM + recall + "\n");
+				    }
+	    }
+				
 	    catch( Exception e){
 	    	e.printStackTrace();
 	    }
@@ -215,5 +223,12 @@ public class Process  {
 	    
 	}
 	
+	public static void main(String args[]){
+		Process p = new Process();
+		String inputFile = "/home/sanchit/Downloads/labelled_thoughts.csv";
+		String regexOutputFile = "/home/sanchit/Downloads/regex_output.txt";
+		String resultFile   = "/home/sanchit/Downloads/result.txt";
+		p.compareResults(inputFile, regexOutputFile, resultFile);
+	}
 	
 }
