@@ -25,8 +25,8 @@ public class RegexEngine {
 	static final ClassLoader loader = RegexEngine.class.getClassLoader();
 	
 	// contains the label and the list of patterns that describe the label
-	public HashMap<String, ArrayList<Pattern>> labelPatternMap;
-	public static HashMap<String, String> subLabelLabelMap;  // Defines a map entry for sublabel and its corresponding sublabel 
+	public HashMap<String, ArrayList<Pattern>> labelPatternMap ;
+	public static HashMap<String, String> subLabelLabelMap = new HashMap<String, String>() ;  // Defines a map entry for sublabel and its corresponding sublabel 
 	
 	/**
 	 * Load the pattern file and the sub-label to label mapping file in memory
@@ -40,7 +40,6 @@ public class RegexEngine {
 	 * Read the labels.txt file into a map
 	 */
 	public void loadLabelMap(){
-		subLabelLabelMap = new HashMap<String, String>();
 		BufferedReader br = null;
 		String line = "";
 	    try{
