@@ -164,15 +164,17 @@ public class Process  {
 					}
 				}
 				else { // Unmatched sub labels are supposed to be printed to file.To keep track of incorrect entries
-					labelRegexString.append(label);
+					labelRegexString.append(label + Constants.LABEL_DELIM);
 				}
 			}
 		}
+		labelRegexString.append( Constants.FIELD_DELIM );
 		// Iterate over the unmatched labels of input string to create string
 		Iterator<String> itr = inputLabelMap.keySet().iterator();
 		while( itr.hasNext()){
-			labelInputString.append(inputLabelMap.get(itr.next()));
+			labelInputString.append(itr.next() + Constants.LABEL_DELIM);
 		}
+		labelInputString.append( Constants.FIELD_DELIM );
 	}
 	
 	/**
@@ -214,15 +216,17 @@ public class Process  {
 					}
 				}
 				else { // Unmatched sub labels are supposed to be printed to file.To keep track of incorrect entries
-						subLabelRegexString.append(sublabel);
+						subLabelRegexString.append(sublabel  + Constants.LABEL_DELIM ) ;
 				}
+				subLabelRegexString.append( Constants.FIELD_DELIM ) ;
 			}
 		}
 		// Iterate over the unmatched labels of input string to create string
 		Iterator<String> itr = inputSubLabelMap.keySet().iterator();
 		while( itr.hasNext()){
-			subLabelInputString.append( inputSubLabelMap.get(itr.next()));
+			subLabelInputString.append( itr.next() + Constants.LABEL_DELIM);
 		}
+		subLabelInputString.append( Constants.FIELD_DELIM );
 	}
 	
 	/**
@@ -342,7 +346,7 @@ public class Process  {
 				arr1   = null; arr2   = null; sentence1 = null; sentence2 = null; isDistortion1 = null; isDistortion2 = null;
 				label1 = null; label2 = null; subCategory1 = null; subCategory2 = null;				
 			}
-		    // Ahh! Finally the time to calculate Precision/ Recall
+		    // Finally the time to calculate Precision/ Recall
 		    // Overall precision
 		    if( totDetected != 0 && totSubLabels != 0) {
 		    	precisionSubLabels = correctDetected/totDetected;
