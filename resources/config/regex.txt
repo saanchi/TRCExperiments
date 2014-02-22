@@ -1,0 +1,28 @@
+emotional_reasoning	.*I.*want.*to.*(quit|end).*
+emotional_reasoning	.*(holy|shit|swear|fuck).*
+black_and_white_thinking	.*(never|ever|always|not possilbe|impossible).*
+black_and_white_thinking	.*(no one|anyone).*
+black_and_white_thinking	.*(too).*(_jj)
+black_and_white_thinking	.*(no).*(_nn)
+fortune_telling	.*subj.*(will|gonna|going to|might|may).*
+fortune_telling	.*I.*(hope|wish).*
+fortune_telling	.*I.*(have).*(nothing|nowhere|no one|).*
+labeling	.*I.*am.*(useless|horrible|ugly|fat|coward|waste|bad).*
+labeling	.*I.*(can not|can't|n't_rb).*
+labeling	.*I.*(runied|screwed|wasted|waste|bad|horrible).*
+labeling	.*I.*(have no|don't|do not|have not|haven't|n't_rb).*control
+mindreading	.*(he|she|they|NNP).*(will|must).*be.*
+mindreading	.*I.*(think|thought|assume).*
+mindreading	.*(he|she|they|NNP).*(does not|doesnt|doesn|n't_rb).*(like|love).*me.*
+mindreading	.*why.*(he|she|they|NNP).*(does not|doesnt|doesn|n't_rb).*(like|love).*me.*
+mindreading	.*(he|she|they|NNP).*(hates).*
+mindreading	.*(he|she|they|NNP).*jj.*
+magnification	.*(is|is not|isn't|are|are not|aren't|doesn't|does not|don't|dont|cant|can't|can not|n't_rb).*
+magnification	.*(why).*(would).*(he|she|they|NNP).*
+magnification	.*I.*(cant|can not|can't|n't_rb).*(understand|believe).*
+magnification	.*(he|she|they|NNP).*(ruined|spoiled).*
+magnification	.*I.*(hate).*
+magnification	.*(How can|How could).*(he|she|they|NNP)
+shoulds_and_musts	.*I.*(won't|wont|n't_rb|will not).*(allow|permit|let).*
+shoulds_and_musts	.*subj.*(need|should|must).*(has|have).*to.* 
+mental_filtering	I.*(do not|dont|don't).*(like|hate).*

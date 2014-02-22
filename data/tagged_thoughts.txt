@@ -1,0 +1,158 @@
+thought_nnp 	is thought	cognitive distortion	subcategory
+i_subj_prp 'll_md never_rb get_vb her_subj_prp to_to understand_vb wher_subje_wrb i_subj_fw am_vbp comi_subjng_vbg from_i_subjn 	y	absolute	black and white thinking
+of_in course_nn this_dt shit_subj_nn would_md happen_vb to_to me_prp !_. 	y	absolute	labeling
+``_`` i_subj_prp miss_vbp my_prp$ dad_nn ._. ''_'' 	emotion	-	-
+i_subj_prp feel_vbp so_rb bad_jj for_i_subjn her_prp$ right_nn now_rb ._. 	emotion	-	-
+she_subj_prp must_md be_vb so_rb emarrassed_jj ._. 	y	making guesses	mindreading
+i_subj_prp feel_vbp like_i_subjn yelling_vbg at_i_subjn the_dt kid_nn who_subj_wp did_vbd thus_rb ._. 	emotion	-	-
+that_dt man_subj_nn is_vbz dead_jj ._. 	situation	-	-
+i_subj_prp 'm_vbp seeing_vbg a_dt dead_jj body_nn ._. 	situation	-	-
+oh_uh boy_uh ,_, is_vbz dan_subj_nnp going_vbg to_to get_vb mad_jj at_in me_prp for_in this_dt one_cd !_. 	y	making guesses	fortune telling
+how_wrb dare_vbp she_subj_prp ruin_vb that_dt project_nn by_in pretending_vbg she_subj_prp 's_vbz qualified_vbn ._. 	y	misperception, making guesses	magnification, mindreading
+she_subj_prp should_md know_vb better_jjr ._. 	y	absolute	shoulds and musts
+she_subj_prp needs_vbz to_to learn_vb that_in she_subj_subj_prp 's_vbz not_rb as_rb smart_jj as_in she_subj_subj_prp would_md like_vb to_to think_vb ._. 	y	absolute, making guesses	shoulds and musts, mindreading
+i_subj_prp got_vbd very_rb angry_jj and_cc frustrated_jj 	emotion	-	-
+then_subj_rb decided_vbn to_to go_vb to_to bed_nn ._. 	situation	-	-
+i_subj_prp really_rb am_vbp alone_rb in_i_subjn this_dt world_nn ._. 	y	absolute, absolute	labeling, black and white thinking
+why_wrb do_vbp you_subj_subj_prp have_vb to_to call_vb when_wrb you_subj_subj_prp know_vbp it_subj_prp 's_vbz bedtime_nn ?_. 	y	misperception, making guesses	magnification, mindreading
+i_subj_prp ca_md n't_rb deal_vb with_i_subjn this_dt ._. 	y	making guesses, making guesses, mispersecption	labeling, overgeneralization, magnification
+he_subj_prp always_rb wants_vbz people_subj_nns to_to think_vb he_subj_prp 's_vbz such_jj a_dt good_jj guy_nn instead_rb of_in a_dt jerk_nn ._. 	y	misperception, absolute	magnification, black and white thinking
+at_in first_jj i_prp was_vbd shocked_vbn ,_, 	emotion	-	-
+then_rb i_subj_prp was_vbd angry_jj ._. 	emotion	-	-
+then_rb for_i_subjn a_dt brief_jj period_nn i_subj_prp was_vbd sad_jj ._. 	emotion	-	-
+2_cd days_nns later_rb i_subj_prp was_vbd extremely_rb relieved_jj ._. 	emotion	-	-
+he_subj_prp is_vbz so_rb annoying_jj he_subj_prp always_rb thinks_vbz of_in himself_prp ._. 	y	misperception, absolute, making guesses	magnification, black and white thinking, mindreading
+i_subj_prp 'll_md never_rb be_vb good_jj enough_rb to_to be_vb her_prp$ mother_nn 	y	absolute, making guesses	black and white thinking, labeling
+i_subj_prp miss_vbp her_subj_prp$ so_rb very_rb much_rb ._. 	emotion		
+please_vb let_vb her_prp be_vb ok_jj !!!_subj_nn 	y	making guesses	fortune telling
+we_subj_prp are_vbp never_rb going_vbg to_to be_vb able_jj to_to get_vb ahead_rb !_. 	y	making guesses, making guesses	fortune telling, overgeneralization
+why_wrb does_vbz n't_rb he_subj_prp want_vb to_to he_subjlp_vb me_prp ?_. 	y	making guesses	mindreading
+i_subj_prp always_rb get_vbp canceled_vbn on_i_subjn or_cc left_vbn out_rp ._. 	y	absolute, making guesses	black and white thinking, overgeneralization
+this_subj_dt is_vbz going_vbg to_to ruin_vb my_prp$ life_nn 	y	making guesses	fortune telling
+i_subj_prp was_vbd very_rb sad_jj and_cc upset_jj ._. 	emotion		
+my_prp$ father_subj_nn no_rb longer_rb has_vbz any_dt siblings_subj_nns alive_jj ._. 	situation	-	-
+i_subj_prp can_md not_rb help_vb him_prp from_i_subjn feeling_vbg so_rb alone_rb ._. 	emotion	-	-
+i_subj_prp feel_vbp so_rb sad_jj seeing_vbg him_subj_prp cry_vb ._. 	emotion	-	-
+how_wrb was_vbd i_subj_prp stupid_jj enough_jj to_to end_vb up_rp here_rb ?_. 	y	absolute	labeling
+i_subj_prp might_md kill_vb myself_prp ._. 	y	making guesses	emotional reasoning
+lonely_jj ,_, empty_subj_jj -lrb-_-lrb- when_wrb looking_vbg at_in the_dt bed_nn ,_, and_cc the_dt feeling_nn in_in my_prp$ arms_nns -rrb-_-rrb- ,_, longing_nn ,_, envy_nn from_in earlier_jjr that_dt day_nn 	emotion	-	-
+seeing_vbg friends_subj_nns in_in couples_nns all_dt happy_jj together_rb 	emotion	-	-
+rage_nn and_cc anger_nn at_in the_dt negativity_nn and_cc criticism_nn coming_vbg from_in friends_nns who_subj_wp constantly_rb put_vbd down_rp my_prp$ relationship_nn 	emotion	-	-
+i_subj_subj_prp never_rb should_md 've_vb gone_vbn in_i_subj_subjn the_dt first_jj place_nn ._. --_: and_cc ,_, either_rb ,_, because_i_subj_subjn why_wrb should_md i_subj_subj_prp keep_vb on_i_subj_subjn going_vbg ?_. 	y	absolute	shoulds and musts
+i_subj_subj_prp 'll_md never_rb be_vb able_jj to_to get_vb those_dt friends_nns i_subj_subj_prp made_vbd back_rp 	y	absolute, making guesses, making guesses	black and white thinking, fortune telling, overgeneralization
+i_subj_prp wo_md n't_rb make_vb any_dt new_jj ones_nns like_i_subjn them_prp 	y	making guesses	fortune telling
+i_subj_prp 'll_md never_rb be_vb able_jj to_to go_vb back_rb to_to school_nn and_cc be_vb successful_jj ._. 	y	absolute, making guesses	black and white thinking, overgeneralization
+i_subj_prp 've_vbp already_rb ruined_vbn my_prp$ life_nn ._. 	y	absolute, making guesses	labeling, overgeneralization
+she_subj_prp must_md not_rb like_vb me_prp for_in some_dt reason_nn ._. 	y	making guesses	mindreading
+i_subj_prp felt_vbd angry_jj about_i_subjn the_dt fact_nn that_subj_i_subjn this_dt company_subj_nn was_vbd trying_vbg to_to charge_vb me_prp so_rb much_rb for_i_subjn something_nn that_subj_wdt is_vbz n't_rb even_rb my_prp$ fault_nn ._. 	emotion	-	-
+i_subj_prp ca_md n't_rb do_vb this_dt 	y	absolute	labeling
+god_subj_nnp hates_vbz me_subj_prp so_rb much_rb !_. 	y	making guesses, misperception	mindreading, magnification
+i_subj_subj_prp hope_vbp that_i_subj_subjn they_subj_prp do_vbp n't_rb think_vb i_subj_subj_prp do_vbp n't_rb belong_vb here_rb ._. ._. 	y	making guesses, making guesses	fortune telling, mindreading
+he_subj_prp thinks_vbz he_prp 's_vbz entitled_vbn to_to my_prp$ help_nn ._. 	y	making guesses	mindreading
+the_subjre_ex 's_vbz always_rb some_subjthing_subj_nn he_subj_prp wants_vbz me_subj_prp to_to do_vb ._. 	y	absolute, absolute	black and white thinking, mindreading
+content_subj_nn ._. peaceful_jj ._. at_in ease_nn ._. mindless_jj ._. 	emotion	-	-
+she_subj_prp i_subjgnored_vbd what_wp i_subj_fw sai_subjd_vbd !_. 	y	making guesses	mindreading
+he_subj_prp 's_vbz always_rb late_jj ._. 	y	absolute, misperception	black and white thinking, magnification
+i_subj_subj_prp was_vbd so_rb angry_jj because_i_subj_subjn he_subj_prp was_vbd telling_vbg me_prp i_subj_subj_prp could_md n't_rb eat_vb ._. 	emotion	-	-
+i_subj_prp was_vbd sad_jj because_i_subjn i_subj_prp was_vbd getting_vbg picked_vbn on_i_subjn when_wrb everyone_subj_nn else_rb was_vbd eating_vbg while_i_subjn on_i_subjn the_dt phone_nn ._. 	emotion	-	-
+they_subj_prp are_vbp not_rb returning_vbg my_prp$ phone_nn call_nn because_in they_subj_prp do_vbp n't_rb want_vb to_to help_vb me_prp ._. 	y	making guesses	mindreading
+i_subj_prp 'll_md never_rb get_vb the_dt hang_vb of_i_subjn this_dt job_nn ._. 	y	absolute, making guesses, making guesses	black and white thinking, fortune telling, overgeneralization
+she_prp was_vbd dedicated_vbn to_to the_dt company_nn ,_, and_cc helped_vbd out_rp a_dt lot_nn of_in people_nns ._. 	situation	-	-
+this_dt guy_subj_nn will_md not_rb listen_vb ._. 	y	making guesses	mindreading
+everyone_subj_nn is_vbz on_in edge_nn right_rb now_rb ._. 	y	absolute	black and white thinking
+``_`` she_subj_prp always_rb does_vbz this_dt shit_nn to_to me_prp ._. ''_'' 	y	absolute, misperception, making guesses	black and white thinking, magnification, mindreading
+i_subj_subj_prp thought_vbd ``_`` she_subj_prp must_md be_vb mad_jj at_i_subj_subjn me_prp for_i_subj_subjn some_dt reason_nn ,_, which_wdt i_subj_subj_prp do_vbp not_rb know_vb ''_'' 	y	making guesses	mindreading
+she_subj_prp 's_vbz going_vbg to_to leave_vb me_prp ._. 	y	making guesses, making guesses	mindreading, fortune telling
+he_subj_prp does_vbz n't_rb like_vb me_prp ._. 	y	making guesses	mindreading
+i_subj_prp feel_vbp so_rb stupid_jj ._. 	y	absolute 	labeling
+she_subj_prp probably_rb thinks_vbz im_nn stupid_jj ._. 	y	making guesses	mindreading
+ugh_nnp ,_, i_subj_subj_subj_prp always_rb do_vbp this_dt i_subj_subj_subj_prp 'm_vbp such_jj an_dt idiot_nn i_subj_subj_subj_prp 'm_vbp a_dt bad_jj friend_nn 	y	absolutes	labeling
+i_subj_prp should_md n't_rb have_vb been_vbn so_rb careless_jj 	y	absolute	shoulds and musts
+why_wrb does_vbz n't_rb anyone_subj_nn ever_rb listen_vbp to_to me_prp ?_. 	y	absolute, making guesses	black and white thinking, mindreading
+i_subj_prp was_vbd just_rb angry_jj and_cc disappointed_jj in_i_subjn myself_prp 	emotion	-	-
+i_subj_prp am_vbp an_dt idiot_nn and_cc completely_rb stupid_jj ._. 	y	absolute	labeling
+i_prp should_md be_vb fired_vbn ._. 	y	absolute	shoulds and musts
+never_rb be_vb hired_vbn anywhere_rb else_rb becaue_nn of_in my_prp$ incompetence_nn ._. 	y	making guesses, absolute	overgeneralization, labeling
+i_subj_prp can_md not_rb believe_vb these_dt people_subj_nns would_md have_vb so_rb little_jj respect_nn for_i_subjn me_prp ._. 	y	misperception, making guesses	magnification, mindreading
+they_subj_prp think_vbp i_subj_prp am_vbp here_rb just_rb for_i_subjn them_prp and_cc my_prp$ time_subj_nn should_md revolve_vb around_i_subjn them_prp ._. 	y	making guesses	mindreading
+she_subj_prp likes_vbz someone_subj_nn else_rb ._. 	y	making guesses	mindreading
+i_subj_prp ca_md n't_rb get_vb anything_nn right_rb ._. 	y	making guesses, absolute	overgeneraliation, labeling
+i_subj_prp just_rb failed_vbd that_i_subjn class_nn ._. 	y	absolute, making guesses, misperception	labeling, fortune telling, magnification
+i_subj_prp should_md know_vb how_wrb to_to be_vb more_rbr careful_jj about_i_subjn issues_nns pertaining_vbg to_to money_nn ._. 	y	absolute	shoulds and musts
+i_subj_subj_prp was_vbd thinking_vbg ``_`` i_subj_subj_prp just_rb know_vbp i_subj_subj_prp 'm_vbp embarrassing_jj myself_subj_prp ''_'' 	y	absolute	labeling
+i_subj_prp 'll_md never_rb get_vb a_dt job_nn ._. 	y	making guesses, making guesses	 fortune telling, overgeneralization
+i_prp 'm_vbp not_rb qualified_vbn ._. 	y	absolute	labeling
+i_subj_prp 'm_vbp not_rb good_jj enough_rb ._. 	y	absolute	labeling
+anxious_jj ,_, get_vb out_in of_in here_rb ._. flight_subj_nn over_in took_vbd fight_nn ._. 	emotion	-	-
+i_subj_prp was_vbd scared_vbn that_i_subjn i_subj_prp was_vbd going_vbg to_to get_vb into_i_subjn trouble_nn or_cc fired_vbn from_i_subjn my_prp$ job_nn 	y	making guesses	fortune telling
+i_subj_prp saw_vbd them_prp on_i_subjn the_dt streets_nns on_i_subjn the_dt way_nn to_to the_dt concert_nn ._. 	situation	-	-
+felt_vbd anxious_jj already_rb to_to see_vb them_prp because_in it_subj_prp had_vbd been_vbn a_dt while_nn ._. 	emotion	-	-
+because_i_subjn i_subj_prp felt_vbd like_i_subjn they_subj_prp viewed_vbd me_prp as_i_subjn having_vbg done_vbn something_subj_nn wrong_jj 	y	making guesses	mindreading
+the_dt management_subj_nn here_rb sucks_vbz ._. 	y	absolute	black and white thinking
+i_subj_prp cant_vbp believe_vb they_subj_prp do_vbp n't_rb care_vb enough_rb about_i_subjn these_dt people_nns ._. 	y	misperception, making guesses	magnification, mindreading
+i_subj_prp 'm_vbp going_vbg to_to have_vb to_to put_vb my_prp$ foot_nn down_rb ._. 	y	absolute	shoulds and musts
+i_subj_prp hope_vbp the_dt student_nn is_vbz n't_rb upset_vbn with_i_subjn me_prp ._. 	y	making guesses	fortune telling
+i_subj_prp hope_vbp that_i_subjn my_prp$ coworker_subj_nn replies_vbz soon_rb so_rb the_dt student_subj_nn does_vbz n't_rb yell_vb at_i_subjn me_prp ._. 	y	making guesses	fortune telling
+i_subj_subj_prp bet_vbp i_subj_subj_prp failed_vbd it_prp ._. 	y	absolute	labeling
+i_subj_prp 'm_vbp so_rb stupid_jj ._. 	y	absolute, misperception	labeling, magnification
+she_subj_prp must_md think_vb i_subj_prp am_vbp a_dt horrible_jj mother_nn ._. 	y	making guesses	mindreading
+this_subj_dt is_vbz going_vbg to_to cost_vb me_prp a_dt lot_nn of_in money_nn !_. 	y	making guesses	fortune telling
+i_subj_prp brought_vbd her_prp$ over_i_subjn to_to visit_vb after_i_subjn school_nn 	situation	-	-
+went_vbd back_rb home_nn a_dt mess_nn with_in no_dt apology_nn but_cc he_subj_prp do_vbp not_rb care_vb as_rb long_rb as_in the_subj_dt kids_subj_nns did_vbd not_rb bothe_subjr_vb him_prp ._. 	y	misperception, making guesses	magnification, mindreading
+i_subj_subj_prp do_vbp n't_rb think_vb i_subj_subj_prp will_md ever_rb get_vb over_i_subj_subjn this_dt ._. 	y	making guesses, making guesses	fortune telling, overgeneralization
+i_subj_prp do_vbp n't_rb think_vb these_dt people_subj_nns understand_vbp my_prp$ presenation_nn ._. 	y	making guesses	mindreading
+we_subj_prp 're_vbp going_vbg to_to lose_vb everything_nn !_. 	y	making guesses, making guesses	fortune telling, overgeneralization
+i_subj_prp felt_vbd helpless_jj ._. 	emotion	-	-
+i_subj_subj_prp thought_vbd ``_`` i_subj_subj_prp 'll_md never_rb get_vb another_dt job_nn ._. 	y	making guesses, making guesses	fortune telling, overgeneralization
+i_subj_prp 'm_vbp going_vbg to_to be_vb homeless_jj ._. 	y	making guesses	fortune telling
+why_wrb do_vbp n't_rb they_subj_prp respect_vbp me_subj_prp enough_jj to_to just_rb talk_vb to_to me_subj_prp about_in issues_nns ?_. 	y	misperception, making guesses	magnification, mindreading
+i_subj_prp have_vbp nowhere_rb else_rb to_to go_vb if_i_subjn my_prp$ parents_subj_nns do_vbp n't_rb want_vb me_prp ;_: 	y	making guesses	fortune telling
+she_subj_prp must_md think_vb that_i_subjn i_subj_prp am_vbp not_rb good_jj enough_rb to_to have_vb a_dt faithful_jj girlfriend_nn 	y	making guesses	mindreading
+my_prp$ parents_subj_nns are_vbp going_vbg to_to kill_vb me_prp ._. 	y	making guesses, making guesses	mindreading, fortune telling
+i_subj_prp ca_md n't_rb afford_vb this_dt 	y	making guesses	fortune telling
+i_subj_prp should_md confront_vb this_dt idiot_nn ._. 	y	absolute	shoulds and musts
+i_subj_prp should_md show_vb him_prp the_subj_dt same_jj disrespect_nn he_subj_prp shows_vbz me_prp and_cc my_prp$ wife_nn ._. 	y	absolute	shoulds and musts
+he_prp is_vbz so_rb upset_jj and_cc disappointed_jj with_in me_prp 	y	making guesses	mindreading
+i_subj_prp hope_vbp he_subj_prp does_vbz n't_rb fire_vb me_prp !_. 	y	making guesses, making guesses	fortune telling, mindreading
+i_subj_prp may_md really_rb lose_vb my_prp$ job_nn 	y	making guesses	fortune telling
+i_subj_prp have_vbp no_dt control_nn over_i_subjn this_dt ._. 	y	absolute, absolute	labeling, black and white thinking
+it_prp 's_vbz left_vbn in_in the_dt hands_nns of_in the_dt state_nn ._. 	situation	-	-
+i_subj_prp am_vbp dumb_jj ,_, idot_nn ,_, stupid_jj 	y	absolute	labeling
+my_prp$ parents_subj_nns are_vbp going_vbg to_to kill_vb me_prp ._. 	y	making guesses, making guesses	fortune telling, mindreading
+she_subj_prp might_md not_rb make_vb it_prp out_rp ._. 	y	making guesses	fortune telling
+i_subj_prp might_md lose_vb my_prp$ sister_nn ._. 	y	making guesses	fortune telling
+i_subj_prp want_vbp to_to make_vb this_dt work_nn ,_, but_cc she_subj_prp does_vbz n't_rb seem_vb to_to want_vb to_to ._. 	y	misperception, making guesses	magnification, mindreading
+i_subj_prp ca_md n't_rb do_vb this_dt anymore_rb ._. 	y	absolute, making guesses	labeling, overgeneralization
+i_subj_prp ca_md n't_rb get_vb it_subj_prp all_dt done_vbn ._. 	y	absolute, making guesses	labeling, overgeneralization
+i_subj_prp want_vbp to_to yell_vb and_cc scream_vb at_i_subjn my_prp$ father_nn ._. 	emotion	-	-
+i_subj_subj_prp want_vbp to_to destroy_vb the_dt place_nn so_rb i_subj_subj_prp can_md never_rb return_vb ._. 	emotion	-	-
+maybe_rb i_fw should_md break_vb this_dt off_rp before_in it_subj_prp gets_vbz any_subj_dt worse_jjr 	y	absolute	shoulds and musts
+is_vbz there_ex another_dt girl_subj_nn ?_. 	situation	-	-
+i_subj_prp 'll_md never_rb make_vb it_prp ,_, 	y	making guesses	overgeneralization
+i_subj_prp 'll_md never_rb be_vb good_jj enough_rb 	y	absolute, making guesses	black and white thinking,  overgeneralization
+i_subj_prp can_md not_rb take_vb this_dt test_nn again_rb ,_, 	y	misperception	magnification
+i_subj_prp 'll_md never_rb do_vb it_prp 	y	making guesses	overgeneralization
+these_dt men_subj_nns are_vbp going_vbg to_to kill_vb my_prp$ boyfriend_nn ._. 	y	making guesses, misperception	fortune telling, magnification
+i_subj_prp and_cc no_dt one_nn will_md care_vb because_i_subjn we_subj_prp 're_vbp gay_jj ._. 	y	absolute, making guesses	black and white thinking, mindreading
+everyone_subj_nn hates_vbz us_prp 	y	absolute, making guesses	overgeneralization, mindreading
+i_subj_subj_prp hope_vbp i_subj_subj_prp did_vbd n't_rb do\/say_jj something_nn to_to upset_vb her_prp ._. 	y	making guesses	mindreading
+she_subj_prp does_vbz n't_rb seem_vb as_i_subjn upset_jj as_i_subjn i_subj_prp am_vbp ?_. 	y	misperception, making guesses	magnification, mindreading
+so_rb does_vbz she_subj_prp really_rb like_in me_prp still_rb ?_. 	y	making guesses	mindreading
+my_prp$ exact_jj thought_subj_nn was_vbd i_fw feel_vb like_in an_dt idiot_nn 	y	absolute	labeling
+there_ex is_vbz no_dt time_subj_nn ._. 	y	absolute	black and white thinking
+she_subj_prp must_md not_rb love_vb me_prp any_dt more_jjr 	y	making guesses	mindreading
+``_`` i_subj_prp should_md n't_rb have_vb reacted_vbn like_i_subjn that_dt ._. ''_'' 	y	absolute	shoulds and musts
+she_subj_prp is_vbz going_vbg to_to get_vb reamed_vbn for_in not_rb noticing_vbg this_dt ._. 	y	making guesses	fortune telling
+then_subj_rb shes_vbz going_vbg to_to kill_vb me_prp for_in not_rb telling_vbg her_prp ._. 	y	making guesses, making guesses	fortune telling, mindreading
+i_subj_prp ca_md n't_rb believe_vb this_subj_dt is_vbz happening_vbg to_to me_prp 	y	misperception	magnification
+my_prp$ thoughts_subj_nns were_vbd that_in the_dt right-wing_jj financial_jj bosses_subj_nns at_in the_dt company_nn 's_pos headquarters_nn had_vbd ruined_vbn my_prp$ career_nn ._. 	y	misperception	magnification
+severely_subj_rb damaged_vbn my_prp$ financial_jj situation_nn just_rb to_to save_vb few_jj bucks_nns ._. 	y	misperception	magnification
+i_subj_prp am_vbp terrible_jj at_i_subjn sales_nns ._. 	y	absolute	labeling
+we_subj_prp could_md die_vb in_in a_dt tornado_nn ._. 	y	making guesses	fortune telling
+everyone_subj_nn is_vbz way_rb too_rb close_jj to_to me_prp ._. 	y	making guesses	overgeneralization
+someone_subj_nn is_vbz always_rb behind_in me_prp 	y	making guesses	overgeneralization
+i_subj_prp am_vbp not_rb a_dt good_jj wife_nn ._. 	y	absolute	labeling
+since_in my_prp$ husband_subj_nn does_vbz not_rb want_vb to_to come_vb home_nn ._. 	y	making guesses	mindreading
+i_subj_subj_prp find_vbp myself_subj_prp saying_vbg ,_, and_cc saying_vbg it_subj_prp alot_nn ,_, ``_`` i_subj_subj_prp hate_vbp my_prp$ life_nn !_. ''_'' 	y	absolute	black and white thinking
+i_subj_prp 'm_vbp gon_vbg na_to fail_vb this_dt test_nn ?_. 	y	making guesses	fortune telling
+i_subj_prp really_rb hate_vbp this_dt class_nn ._. 	y	absolute	black and white thinking

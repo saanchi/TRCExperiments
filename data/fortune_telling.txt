@@ -1,0 +1,7 @@
+i_subj_prp might_md kill_vb myself_prp ._. 	y	making guesses	emotional reasoning
+this_dt guy_subj_nn will_md not_rb listen_vb ._. 	y	making guesses	mindreading
+i_subj_subj_prp do_vbp n't_rb think_vb i_subj_subj_prp will_md ever_rb get_vb over_i_subj_subjn this_dt ._. 	y	making guesses, making guesses	fortune telling, overgeneralization
+i_subj_prp may_md really_rb lose_vb my_prp$ job_nn 	y	making guesses	fortune telling
+she_subj_prp might_md not_rb make_vb it_prp out_rp ._. 	y	making guesses	fortune telling
+i_subj_prp might_md lose_vb my_prp$ sister_nn ._. 	y	making guesses	fortune telling
+i_subj_prp and_cc no_dt one_nn will_md care_vb because_i_subjn we_subj_prp 're_vbp gay_jj ._. 	y	absolute, making guesses	black and white thinking, mindreading

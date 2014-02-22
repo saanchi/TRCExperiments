@@ -26,6 +26,7 @@ public class TRParse {
 	    //tagger = new MaxentTagger( "model/wsj-0-18-bidirectional-distsim.tagger");
 	    tagger = new MaxentTagger( "model/english-left3words-distsim.tagger");
 	}
+	
 		/**
 	   * parser turns a Sentence into tokens and then parse
 	   * trees.  
@@ -46,6 +47,7 @@ public class TRParse {
 	    while( itr.hasNext()){
 	    	TypedDependency td = itr.next();
 	    	// Extract only the subject
+	    	System.out.println( td.reln() + " " + td.gov() + " " + td.dep());
 	    	if(td.reln().toString().equalsIgnoreCase("nsubj")){
 	    		// Extract the noun part of subject
 	    		String arr1[] = td.dep().toString().split("-");
@@ -99,11 +101,14 @@ public class TRParse {
 	
 	public static void main(String[] args) throws IOException {
 	
-		String sentence = " This is a sentence";
+		String sentences = "She got really mean and I guess I didn't really know her.	";
 		String fileName = "data/labelled_thoughts.csv";
 		TRParse trp = new TRParse();
-		String tagged = trp.getTagged(sentence);
-		System.out.println( tagged);
+		String arr[] = sentences.split("\\." );
+		for( int i=0; i<arr.length; i++){
+			String tagged = trp.getTagged(arr[i]);
+			System.out.println( " x" + tagged);
+		}
     }
 
 }

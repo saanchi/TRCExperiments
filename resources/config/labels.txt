@@ -1,0 +1,11 @@
+magnification	misperception
+minimization	misperception
+mindreading	making_guesses
+fortune_telling	making_guesses
+personlization	making_guesses
+overgeneralization	making_guesses
+emotional_reasoning	making_guesses
+mental_filtering	tunnel_vision
+black_and_white_thinking	absolute
+labeling	absolute
+shoulds_and_musts	absolute
